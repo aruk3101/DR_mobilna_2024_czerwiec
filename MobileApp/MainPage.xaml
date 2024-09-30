@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.MainPage"
+             BackgroundColor="#F5F5DC"
+             Title="Home">
+
+
+    <StackLayout HorizontalOptions="Center">
+        <Label Text="Gra w kości. Autor Pesel"
+               HorizontalOptions="Center"
+               TextColor="White"
+               Margin="0,10,0,10"
+               FontSize="Large"
+               BackgroundColor="#A52A2A"
+               WidthRequest="400"
+               Padding="5"/>
+        <Button Text="RZUĆ KOŚĆMI"
+                x:Name="RzutKoscmi"
+                Clicked="RzutKoscmi_Clicked"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                BackgroundColor="#D2691E"
+                Margin="0,10,0,10"
+                TextColor="White"
+                CornerRadius="15"/>
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="FillAndExpand"
+                     BackgroundColor="White"
+                     Padding="9" >
+            <Image x:Name="kostka1" Source="question.jpg" HeightRequest="100" WidthRequest="70" />
+            <Image x:Name="kostka2" Source="question.jpg" HeightRequest="100" WidthRequest="70" />
+            <Image x:Name="kostka3" Source="question.jpg" HeightRequest="100" WidthRequest="70" />
+            <Image x:Name="kostka4" Source="question.jpg" HeightRequest="100" WidthRequest="70" />
+            <Image x:Name="kostka5" Source="question.jpg" HeightRequest="100" WidthRequest="70" />
+        </StackLayout>
+        <Label Text="wynik tego losowania: 0"
+               x:Name="wynikLos"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"
+               Margin="0,10,0,10"
+               />
+        <Label Text="wynik gry: 0"
+               x:Name="wynikGryEtykieta"
+               HorizontalTextAlignment="Center"
+               HorizontalOptions="FillAndExpand"
+               Margin="0,10,0,10"/>
+        <Button x:Name="Resetuj"
+                Clicked="Resetuj_Clicked"
+                Text="RESETUJ WYNIK"
+                BackgroundColor="#D2691E"
+                Margin="0,10,0,10"
+                TextColor="White"
+                CornerRadius="15"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
